@@ -50,29 +50,6 @@ const SignUpForm = () => {
 			}
 		}
 	};
-	// if (!password) return;
-	// if (password === confirmPassword) {
-	// 	createAuthUserWithEmailAndPassword(auth, email, password)
-	// 		.then((userCredential) => {
-	// 			// Signed in
-	// 			const user = userCredential.user;
-	// 			// ...
-	// 		})
-	// 		.catch((error) => {
-	// 			const errorCode = error.code;
-	// 			const errorMessage = error.message;
-	// 			// ..
-	// 		});
-	// }
-	// const { name, email, password, confirmPassword } = event.target;
-
-	// const { user } = await createAuthUserWithEmailAndPassword({
-	// 	name,
-	// 	email,
-	// 	password,
-	// });
-	// const userDocRef = await createUserDocumentFromAuth(user);
-
 	const handleChange = (event) => {
 		const { name, value } = event.target;
 
@@ -81,7 +58,7 @@ const SignUpForm = () => {
 
 	return (
 		<div className='sign-up-container'>
-			<h2>Don't have an account</h2>
+			<h2>Don't have an account?</h2>
 			<span>Sign up with your email and password</span>
 			<form onSubmit={handleSubmit}>
 				<FormInput
